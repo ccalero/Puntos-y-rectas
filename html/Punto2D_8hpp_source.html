@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Practica 1: Fichero Fuente Punto2D.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Practica 1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Punto2D.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Punto2D_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef PUNTO2D_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PUNTO2D_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classPunto2D.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPunto2D.html">Punto2D</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> _x;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> _y;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classPunto2D.html#ad7792d5b7cdbd0334e03a807123ab013">   25</a></span>&#160;    <a class="code" href="classPunto2D.html#ad7792d5b7cdbd0334e03a807123ab013">Punto2D</a>(<span class="keywordtype">int</span> <span class="keyword">const</span> &amp;x, <span class="keywordtype">int</span> <span class="keyword">const</span> &amp;y) : _x(x), _y(y){};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classPunto2D.html#ac225d561fb99b5f799118e64fd2eddd5">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPunto2D.html#ac225d561fb99b5f799118e64fd2eddd5">getX</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> _x;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classPunto2D.html#a7085956a187105bef971fbecd1a97ac0">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPunto2D.html#a7085956a187105bef971fbecd1a97ac0">setX</a>(<span class="keywordtype">int</span> <span class="keyword">const</span> &amp;x) {_x = x;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classPunto2D.html#a9a214e828091c27ab90eb0dacfd75cd1">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPunto2D.html#a9a214e828091c27ab90eb0dacfd75cd1">getY</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> _y;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classPunto2D.html#a29753627e154d09157b7387718e1e4e2">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPunto2D.html#a29753627e154d09157b7387718e1e4e2">setY</a>(<span class="keywordtype">int</span> <span class="keyword">const</span> &amp;y) {_y = y;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPunto2D.html#a02e7df1c0eec95c14fafb59728fa7d4b">sonIguales</a>(<span class="keyword">const</span> <a class="code" href="classPunto2D.html">Punto2D</a> &amp;p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PUNTO2D_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classPunto2D_html_a02e7df1c0eec95c14fafb59728fa7d4b"><div class="ttname"><a href="classPunto2D.html#a02e7df1c0eec95c14fafb59728fa7d4b">Punto2D::sonIguales</a></div><div class="ttdeci">bool sonIguales(const Punto2D &amp;p) const </div><div class="ttdoc">Comprueba si dos puntos son iguales. </div><div class="ttdef"><b>Definition:</b> Punto2D.cpp:14</div></div>
+<div class="ttc" id="classPunto2D_html_a9a214e828091c27ab90eb0dacfd75cd1"><div class="ttname"><a href="classPunto2D.html#a9a214e828091c27ab90eb0dacfd75cd1">Punto2D::getY</a></div><div class="ttdeci">int getY() const </div><div class="ttdoc">Devuelve el valor de y. </div><div class="ttdef"><b>Definition:</b> Punto2D.hpp:38</div></div>
+<div class="ttc" id="classPunto2D_html_ac225d561fb99b5f799118e64fd2eddd5"><div class="ttname"><a href="classPunto2D.html#ac225d561fb99b5f799118e64fd2eddd5">Punto2D::getX</a></div><div class="ttdeci">int getX() const </div><div class="ttdoc">Devuelve el valor de x. </div><div class="ttdef"><b>Definition:</b> Punto2D.hpp:30</div></div>
+<div class="ttc" id="classPunto2D_html"><div class="ttname"><a href="classPunto2D.html">Punto2D</a></div><div class="ttdef"><b>Definition:</b> Punto2D.hpp:11</div></div>
+<div class="ttc" id="classPunto2D_html_a29753627e154d09157b7387718e1e4e2"><div class="ttname"><a href="classPunto2D.html#a29753627e154d09157b7387718e1e4e2">Punto2D::setY</a></div><div class="ttdeci">void setY(int const &amp;y)</div><div class="ttdoc">Asigna un valor de y. </div><div class="ttdef"><b>Definition:</b> Punto2D.hpp:42</div></div>
+<div class="ttc" id="classPunto2D_html_ad7792d5b7cdbd0334e03a807123ab013"><div class="ttname"><a href="classPunto2D.html#ad7792d5b7cdbd0334e03a807123ab013">Punto2D::Punto2D</a></div><div class="ttdeci">Punto2D(int const &amp;x, int const &amp;y)</div><div class="ttdoc">Crea un punto con los datos pasados, x e y. </div><div class="ttdef"><b>Definition:</b> Punto2D.hpp:25</div></div>
+<div class="ttc" id="classPunto2D_html_a7085956a187105bef971fbecd1a97ac0"><div class="ttname"><a href="classPunto2D.html#a7085956a187105bef971fbecd1a97ac0">Punto2D::setX</a></div><div class="ttdeci">void setX(int const &amp;x)</div><div class="ttdoc">Asigna un valor de x. </div><div class="ttdef"><b>Definition:</b> Punto2D.hpp:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 2 de Marzo de 2015 09:48:33 para Practica 1 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Practica 1: Fichero Fuente Recta2D.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Practica 1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Recta2D.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Recta2D_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef RECTA2D_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RECTA2D_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Punto2D_8hpp.html">Punto2D.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classRecta2D.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRecta2D.html">Recta2D</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> _a;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> _b;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> _c;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classRecta2D.html#a68c28d0b366c5aa41c1d0001d0640ea3">   27</a></span>&#160;    <a class="code" href="classRecta2D.html#a68c28d0b366c5aa41c1d0001d0640ea3">Recta2D</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c): _a(a), _b(b), _c(c){};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classRecta2D.html#a68c28d0b366c5aa41c1d0001d0640ea3">Recta2D</a>(<a class="code" href="classPunto2D.html">Punto2D</a> p, <a class="code" href="classPunto2D.html">Punto2D</a> q);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classRecta2D.html#a7c5b853e925bbc0d36cad57326a1b7cd">   39</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRecta2D.html#a7c5b853e925bbc0d36cad57326a1b7cd">getA</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> _a;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classRecta2D.html#a5610ca9fdb070557a464fa73e291086d">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecta2D.html#a5610ca9fdb070557a464fa73e291086d">setA</a>(<span class="keywordtype">int</span> a) {_a = a;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classRecta2D.html#a727e2ef1fa7392323a41f466e2d7aaf6">   47</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRecta2D.html#a727e2ef1fa7392323a41f466e2d7aaf6">getB</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> _b;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classRecta2D.html#a60470f94df0a4b0d7fdbf68b6ca82dd4">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecta2D.html#a60470f94df0a4b0d7fdbf68b6ca82dd4">setB</a>(<span class="keywordtype">int</span> b) {_b = b;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classRecta2D.html#ae7f6ad8ad7764a14fc21a5f9e0901931">   55</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRecta2D.html#ae7f6ad8ad7764a14fc21a5f9e0901931">getC</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> _c;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classRecta2D.html#a132855bb7b7c9bb89cfb086138920013">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecta2D.html#a132855bb7b7c9bb89cfb086138920013">setC</a>(<span class="keywordtype">int</span> c) {_c = c;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classRecta2D.html#acda0c111d3e1dcdd4b2d415f3d582fac">distancia</a>(<a class="code" href="classPunto2D.html">Punto2D</a> <span class="keyword">const</span> &amp;p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RECTA2D_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classPunto2D_html"><div class="ttname"><a href="classPunto2D.html">Punto2D</a></div><div class="ttdef"><b>Definition:</b> Punto2D.hpp:11</div></div>
+<div class="ttc" id="classRecta2D_html_acda0c111d3e1dcdd4b2d415f3d582fac"><div class="ttname"><a href="classRecta2D.html#acda0c111d3e1dcdd4b2d415f3d582fac">Recta2D::distancia</a></div><div class="ttdeci">double distancia(Punto2D const &amp;p) const </div><div class="ttdoc">Calcula la distancia de un punto con la recta. </div><div class="ttdef"><b>Definition:</b> Recta2D.cpp:30</div></div>
+<div class="ttc" id="classRecta2D_html_a5610ca9fdb070557a464fa73e291086d"><div class="ttname"><a href="classRecta2D.html#a5610ca9fdb070557a464fa73e291086d">Recta2D::setA</a></div><div class="ttdeci">void setA(int a)</div><div class="ttdoc">Asigna un valor de a. </div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:43</div></div>
+<div class="ttc" id="classRecta2D_html_a68c28d0b366c5aa41c1d0001d0640ea3"><div class="ttname"><a href="classRecta2D.html#a68c28d0b366c5aa41c1d0001d0640ea3">Recta2D::Recta2D</a></div><div class="ttdeci">Recta2D(int a, int b, int c)</div><div class="ttdoc">Crea una recta con los datos pasados, a, b y c. </div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:27</div></div>
+<div class="ttc" id="Punto2D_8hpp_html"><div class="ttname"><a href="Punto2D_8hpp.html">Punto2D.hpp</a></div><div class="ttdoc">Declaracion de un punto (Punto2D) </div></div>
+<div class="ttc" id="classRecta2D_html_a132855bb7b7c9bb89cfb086138920013"><div class="ttname"><a href="classRecta2D.html#a132855bb7b7c9bb89cfb086138920013">Recta2D::setC</a></div><div class="ttdeci">void setC(int c)</div><div class="ttdoc">Asigna un valor de c. </div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:59</div></div>
+<div class="ttc" id="classRecta2D_html_a727e2ef1fa7392323a41f466e2d7aaf6"><div class="ttname"><a href="classRecta2D.html#a727e2ef1fa7392323a41f466e2d7aaf6">Recta2D::getB</a></div><div class="ttdeci">int getB() const </div><div class="ttdoc">Devuelve el valor de b. </div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:47</div></div>
+<div class="ttc" id="classRecta2D_html"><div class="ttname"><a href="classRecta2D.html">Recta2D</a></div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:12</div></div>
+<div class="ttc" id="classRecta2D_html_a60470f94df0a4b0d7fdbf68b6ca82dd4"><div class="ttname"><a href="classRecta2D.html#a60470f94df0a4b0d7fdbf68b6ca82dd4">Recta2D::setB</a></div><div class="ttdeci">void setB(int b)</div><div class="ttdoc">Asigna un valor de b. </div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:51</div></div>
+<div class="ttc" id="classRecta2D_html_ae7f6ad8ad7764a14fc21a5f9e0901931"><div class="ttname"><a href="classRecta2D.html#ae7f6ad8ad7764a14fc21a5f9e0901931">Recta2D::getC</a></div><div class="ttdeci">int getC() const </div><div class="ttdoc">Devuelve el valor de c. </div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:55</div></div>
+<div class="ttc" id="classRecta2D_html_a7c5b853e925bbc0d36cad57326a1b7cd"><div class="ttname"><a href="classRecta2D.html#a7c5b853e925bbc0d36cad57326a1b7cd">Recta2D::getA</a></div><div class="ttdeci">int getA() const </div><div class="ttdoc">Devuelve el valor de a. </div><div class="ttdef"><b>Definition:</b> Recta2D.hpp:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 2 de Marzo de 2015 09:48:33 para Practica 1 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
